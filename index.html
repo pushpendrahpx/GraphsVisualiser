@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Graphs Visual</title>
+        <link href="./index.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div class="top"> 
+            <div class="actions">
+                <span>Add Node Actions : </span>
+                <input type="number" placeholder="Enter Node Number" id="nodenumber" value="1" />
+                <input type="number" placeholder="Enter X coordinate" id="NewX" value="200" />
+                <input type="number" placeholder="Enter Y coordinate" id="NewY" value="200" />
+                <button id="addnodebtn"> Add Node </button>
+                <button id="getmouselocation">get mouse location</button>
+
+                <br />
+                <span>Add Edge Actions : </span>
+                <span> nodeA :  </span>
+                <select id="nodeAList" >
+                    <option> Please Add First Node </option>
+                </select>
+                <span > nodeB :  </span>
+                <select id="nodeBList" >
+                    <option> Please Add First Node  </option>
+                </select>
+                <button id="addedgebtn"> Add Edge </button>
+            </div>
+        </div>
+        <canvas id="bottom" ></canvas>
+    </body>
+    <script src="./index.js" type="module" ></script>
+</html>
